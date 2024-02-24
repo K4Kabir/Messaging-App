@@ -30,7 +30,7 @@ const Register = ({ setLogin }) => {
                     <TextField required type='password' label='Password' />
                     <Button type='submit' variant='contained' size='small'>Login</Button>
                     <Typography textAlign={'center'}>OR</Typography>
-                    <Button onClick={() => setLogin((prev) => !prev)} variant='outlined'>Register</Button>
+                    <Button onClick={() => setLogin((prev) => !prev)} variant='outlined'>Login</Button>
                 </Paper>
             </form>
         </Container>
