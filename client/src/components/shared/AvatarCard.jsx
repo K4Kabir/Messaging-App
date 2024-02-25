@@ -4,11 +4,11 @@ const AvatarCard = ({ avatar = [], max = 4 }) => {
   return (
     <Stack direction={"row"} spacing={0.5}>
       <AvatarGroup max={max}>
-        <Box width={"5rem"} height={"3rem"}>
+        <Box width={"7rem"} height={"3rem"}>
           {avatar?.map((a, i) => {
             return (
               <Avatar
-                key={Math.random() * 100}
+                key={i}
                 src={a}
                 sx={{
                   width: "3rem",

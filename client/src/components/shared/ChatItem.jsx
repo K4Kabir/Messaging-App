@@ -30,7 +30,7 @@ const ChatItem = ({
           position: "relative",
         }}
       >
-        <AvatarCard avatar={avatar} />
+        <AvatarCard max={6} avatar={avatar} />
         <Stack>
           <Typography>{name}</Typography>
           {newMessagesAlert && (
