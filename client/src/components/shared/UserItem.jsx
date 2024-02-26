@@ -1,15 +1,9 @@
-import {
-  Avatar,
-  Button,
-  IconButton,
-  ListItem,
-  Stack,
-  Typography,
-} from "@mui/material";
-import React from "react";
 import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
+import { Avatar, IconButton, ListItem, Stack, Typography } from "@mui/material";
+import React from "react";
 
-const UserItem = ({ user, handler, handlerIsLoading }) => {
+const UserItem = ({ user, handler, handlerIsLoading, isSelected = false }) => {
   return (
     <ListItem>
       <Stack
@@ -21,12 +15,16 @@ const UserItem = ({ user, handler, handlerIsLoading }) => {
         <Avatar src={user.avatar} />
         <Typography width={"100%"}>{user.name}</Typography>
         <IconButton
-          sx={{ bgcolor: "grey" }}
+          sx={{
+            bgcolor: isSelected ? "error.main" : "primary.main",
+            color: "white",
+            "&:hover": { bgcolor: isSelected ? "error.dark" : "primary.dark" },
+          }}
           onClick={() => handler(user.id)}
           disabled={handlerIsLoading}
           variant="contained"
         >
-          <AddIcon />
+          {isSelected ? <RemoveIcon /> : <AddIcon />}
         </IconButton>
       </Stack>
     </ListItem>

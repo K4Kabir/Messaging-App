@@ -42,13 +42,13 @@ export const SampleUser = [
     avatar:
       "https://images.pexels.com/photos/20327411/pexels-photo-20327411/free-photo-of-three-colours.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     name: "Test User",
-    id: "1",
+    id: "2",
   },
   {
     avatar:
       "https://images.pexels.com/photos/20327411/pexels-photo-20327411/free-photo-of-three-colours.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     name: "Test User",
-    id: "1",
+    id: "3",
   },
 ];
 
