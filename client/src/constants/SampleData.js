@@ -78,3 +78,80 @@ export const sampleNotification = [
     id: "1",
   },
 ];
+
+export const sampleMessage = [
+  {
+    attachments: [
+      {
+        public_id: "sdfsd",
+        url: "https://res.cloudinary.com/dtyehxt51/image/upload/v1706436946/d8n7pwo6tj1v7hs0xwzf.jpg",
+      },
+    ],
+
+    _id: "sdfgsdgdsfgfdsgdsfg",
+    sender: {
+      _id: "kk",
+      name: "Rakesh",
+    },
+    chat: "chatId",
+    createdAt: "2024-02-12T10:41:30.630Z",
+  },
+  {
+    attachments: [],
+    content: "Sample Message 2",
+    _id: "sdfgsdgdsfgfdsgdsfh",
+    sender: {
+      _id: "S_idfsb",
+      name: "Suresh",
+    },
+    chat: "chatId",
+    createdAt: "2024-02-13T11:12:45.420Z",
+  },
+  {
+    attachments: [
+      {
+        public_id: "sdasdas",
+        url: "https://res.cloudinary.com/dtyehxt51/image/upload/v1706436946/d8n7pwo6tj1v7hs0xwzf.jpg",
+      },
+    ],
+
+    _id: "sdfgsdgdsfgfdsgdsfi",
+    sender: {
+      _id: "S_idfsc",
+      name: "Priya",
+    },
+    chat: "chatId",
+    createdAt: "2024-02-14T14:20:55.750Z",
+  },
+  {
+    attachments: [],
+    content: "Sample Message 4",
+    _id: "sdfgsdgdsfgfdsgdsfj",
+    sender: {
+      _id: "S_idfsd",
+      name: "Rahul",
+    },
+    chat: "chatId",
+    createdAt: "2024-02-15T16:30:10.890Z",
+  },
+  {
+    attachments: [
+      {
+        public_id: "sdfsdas",
+        url: "http://example.com/document.pdf",
+      },
+      {
+        public_id: "sdfsdf",
+        url: "http://example.com/another-document.pdf",
+      },
+    ],
+    content: "Sample Message 5",
+    _id: "sdfgsdgdsfgfdsgdsfk",
+    sender: {
+      _id: "S_idfse",
+      name: "Anita",
+    },
+    chat: "chatId",
+    createdAt: "2024-02-16T18:40:20.110Z",
+  },
+];
