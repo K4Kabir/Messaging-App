@@ -17,6 +17,7 @@ const MessageComponent = ({ message, user }) => {
         borderRadius: "5px",
         padding: "0.5rem",
         width: "fit-content",
+        position: "relative",
       }}
     >
       {!sameSender && (
@@ -44,6 +45,32 @@ const MessageComponent = ({ message, user }) => {
       <Typography variant="caption" color={"text.secondary"}>
         {timeAgo}
       </Typography>
+      {sameSender ? (
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            right: -18,
+            width: "20px",
+            height: "20px",
+            bgcolor: "white",
+            clipPath: "polygon(100% 46%, 2% 99%, 1% 0%)",
+          }}
+        ></Box>
+      ) : (
+        <Box
+          sx={{
+            position: "absolute",
+            top: 0,
+            left: -17,
+            width: "20px",
+            height: "20px",
+            bgcolor: "white",
+            clipPath: "polygon(100% 46%, 2% 99%, 1% 0%)",
+            rotate: "180deg",
+          }}
+        ></Box>
+      )}
     </div>
   );
 };
